@@ -6,7 +6,7 @@
   --gdm-bg2: #4d4d4d;
   --gmd-bg-hover: #00000080;
 
-  --gmd-border: #808080;
+  --gmd-border: #dadce0;
 
   /* overwrite Google variables */
   --gm-hairlinebutton-outline-color: var(--gdm-border) !important;
@@ -36,7 +36,7 @@
   }
 
   /* Other bg color */
-  .gdm-page-drive form, .gdm-page-drive nav > div:nth-of-type(2) > div[aria-selected=true] > div, .gdm-page-drive form > div:last-of-type > div > div > div > div > div {
+  .gdm-page-drive form, .gdm-page-drive nav > div:nth-of-type(2) > div[aria-selected=true] > div, .gdm-page-drive form > div:last-of-type > div > div > div > div > div, .gdm-docs-document div#docs-editor-container div#docs-editor div#kix-appview div.kix-appview-editor-container div.kix-appview-editor {
     background-color: var(--gdm-bg2) !important;
     color: var(--gmd-fg) !important;
   }
@@ -47,7 +47,7 @@
   }
 
   /* No borders */
-  .gdm-page-drive div#drive_main_page > div:nth-of-type(2) > div:nth-of-type(6) > div {
+  .gdm-page-drive div#drive_main_page > div:nth-of-type(2) > div:nth-of-type(6) > div, .gdm-page-docs div.docs-companion-app-switcher-container {
     border: none !important;
     border-color: transparent;
     border-width: 0px;
@@ -103,3 +103,13 @@
     border-width: 1px 0px 0px 0px;
   }
 /* 3 END */
+
+
+/* 4 Google Docs */
+  .gdm-docs-document div.companion-collapser-button-container {
+    border-color: var(--gdm-border);
+    border-width: 0px 0px 0px 1px;
+    border-style: solid;
+    box-sizing: border-box;
+  }
+/* 4 END */
