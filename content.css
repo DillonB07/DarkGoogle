@@ -6,7 +6,7 @@
   --gdm-bg2: #4d4d4d;
   --gdm-bg-hover: #00000080;
 
-  --gdm-border: #dadce0;
+  --gdm-border: #787878;
 
   /* overwrite Google variables */
   --gm-hairlinebutton-outline-color: var(--gdm-border) !important;
