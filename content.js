@@ -63,6 +63,9 @@ document.addEventListener('DOMContentLoaded', e => {
     document.body.classList.add('gdm-docs-' + window.location.pathname.split('/')[1]);
   }
 
+  // Add a class for iFrame name
+  document.body.classList.add('gdm-win-name-' + window.name.toLowerCase().replace(/\W+/g, '-'));
+
   let driveSelectedFileClass = null;
   let driveSelectedFileSelector = null;
 

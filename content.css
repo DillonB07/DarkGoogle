@@ -17,7 +17,7 @@
 
 /* 1 Styles for all Google pages */
   /* Dark bg and light fg */
-  html, body, .gdm-make-dark, #docs-chrome, #docs-editor-container, .docs-titlebar-buttons, .companion-guest-app-switcher, #docs-toolbar-wrapper, #docs-menubar .menu-button, #viewModeButton, #docs-meet-in-editors-entrypointbutton, #grid-bottom-bar, .companion-collapser-button, .goog-toolbar-menu-button, #formula-bar, #t-formula-bar-input-container *, #formula-bar-name-box-wrapper div:first-child, #t-name-box, .docs-sheet-tab, #grid-bottom-bar tbody tr:last-child td:last-child div, .gdm-page-drive div#drive_main_page > div > div:not(:first-of-type), .gdm-page-drive div#drive_main_page > div > div:nth-of-type(5) > div > div, .gdm-page-drive c-wiz, .gdm-page-drive c-wiz > div > div, .gdm-page-drive #drive_main_page c-wiz > div > c-wiz > div > div:nth-of-type(2) > div > div > div > div > div > div > div > div, .gdm-page-drive div#drive_main_page c-wiz > div > c-wiz > div > div:nth-of-type(2) > div > div > div > div > div > div:nth-of-type(2) > div, .gdm-page-drive form > div:last-of-type > div, div[class][aria-haspopup=true], div[class][aria-haspopup=true]::after, .gdm-page-drive div#drive_main_page > div:nth-of-type(2), .gdm-page-ogs > div > c-wiz > div > div > c-wiz > div > div, .gdm-page-ogs > div > c-wiz > div > div > c-wiz > div > div > div:last-of-type a[class] {
+  html, body, .gdm-make-dark, #docs-chrome, #docs-editor-container, .docs-titlebar-buttons, .companion-guest-app-switcher, #docs-toolbar-wrapper, #docs-menubar .menu-button, #viewModeButton, #docs-meet-in-editors-entrypointbutton, #grid-bottom-bar, .companion-collapser-button, .goog-toolbar-menu-button, #formula-bar, #t-formula-bar-input-container *, #formula-bar-name-box-wrapper div:first-child, #t-name-box, .docs-sheet-tab, #grid-bottom-bar tbody tr:last-child td:last-child div, .gdm-page-drive div#drive_main_page > div > div:not(:first-of-type), .gdm-page-drive div#drive_main_page > div > div:nth-of-type(5) > div > div, .gdm-page-drive c-wiz, .gdm-page-drive c-wiz > div > div, .gdm-page-drive #drive_main_page c-wiz > div > c-wiz > div > div:nth-of-type(2) > div > div > div > div > div > div > div > div, .gdm-page-drive div#drive_main_page c-wiz > div > c-wiz > div > div:nth-of-type(2) > div > div > div > div > div > div:nth-of-type(2) > div, .gdm-page-drive form > div:last-of-type > div, div[class][aria-haspopup=true], div[class][aria-haspopup=true]::after, .gdm-page-drive div#drive_main_page > div:nth-of-type(2), .gdm-page-ogs > div > c-wiz > div > div > c-wiz > div > div, .gdm-page-ogs > div > c-wiz > div > div > c-wiz > div > div > div:last-of-type a[class], .gdm-page-ogs.gdm-win-name-account c-wiz div[role=dialog], .gdm-page-accounts div[aria-hidden="true"] {
     background-color: var(--gdm-bg) !important;
     background-image: none !important;
     color: var(--gdm-fg) !important;
@@ -36,14 +36,14 @@
   }
 
   /* Other bg color */
-  .gdm-page-drive form, .gdm-page-drive nav > div:nth-of-type(2) > div[aria-selected=true] > div, .gdm-page-drive form > div:last-of-type > div > div > div > div > div, .gdm-docs-document div#docs-editor-container div#docs-editor div#kix-appview div.kix-appview-editor-container div.kix-appview-editor, .docs-ruler .docs-ruler-background {
+  .gdm-page-drive form, .gdm-page-drive nav > div:nth-of-type(2) > div[aria-selected=true] > div, .gdm-page-drive form > div:last-of-type > div > div > div > div > div, .gdm-docs-document div#docs-editor-container div#docs-editor div#kix-appview div.kix-appview-editor-container div.kix-appview-editor, .docs-ruler .docs-ruler-background, .gdm-page-docs div.goog-menuitem-highlight {
     background-color: var(--gdm-bg2) !important;
     color: var(--gdm-fg) !important;
   }
 
   /* Dark borders */
-  .gdm-page-drive div#drive_main_page c-wiz > div > c-wiz > div > div:nth-of-type(2) > div > div > div, .gdm-page-drive form > div:last-of-type > div > div > div > div > div {
-    border-color: var(--gdm-border);
+  .gdm-page-drive div#drive_main_page c-wiz > div > c-wiz > div > div:nth-of-type(2) > div > div > div, .gdm-page-drive form > div:last-of-type > div > div > div > div > div, .gdm-page-docs div.titlebar-request-access-button {
+    border-color: var(--gdm-border) !important;
   }
 
   /* No borders */
@@ -55,12 +55,12 @@
   }
 
   /* Dark hover */
-  div:hover > div[data-target=folder], [guidedhelpid="folder_path_button"]:hover > div {
+  div:hover > div[data-target=folder], [guidedhelpid="folder_path_button"]:hover > div, .gdm-page-ogs.gdm-win-name-account c-wiz a:is([data-email], [data-aal]):hover {
     background: var(--gdm-bg-hover) !important;
   }
 
   /* Inverse colors */
-  .gdm-docs-document canvas.kix-canvas-tile-content {
+  .gdm-docs-document canvas.kix-canvas-tile-content, div.goog-menuitem-checkbox {
     filter: invert(1);
   }
 
@@ -117,6 +117,10 @@
     border-style: solid;
     box-sizing: border-box;
   }
+
+  .gdm-docs-document canvas.kix-canvas-tile-content {
+    border-radius: 5px;
+  }
 /* 4 END */
 
 
@@ -125,7 +129,26 @@
     background: transparent !important;
   }
 
-  :not([disabled]) .docs-icon:not([disabled]) {
+  :not([disabled]) .docs-icon:not([disabled]) :not([class*=color]) {
     filter: brightness(5);
   }
+
+  .gdm-page-docs div.goog-menu.goog-menu-vertical {
+    border: 1px solid var(--gdm-border) !important;
+    border-width: 0px 1px 1px 1px !important;
+    margin-top: 2px !important;
+    border-top-right-radius: 0px !important;
+  }
 /* 5 END */
+
+
+/* 6 Google Ogs (account stuff) */
+  /*.gdm-page-ogs.gdm-win-name-account */
+/* 6 END */
+
+
+/* 7 Google Accounts */
+  .gdm-page-accounts div#initialView {
+    background-color: var(--gdm-bg) !important;
+  }
+/* 7 END */
