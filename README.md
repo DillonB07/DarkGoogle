@@ -1,15 +1,18 @@
 # Dark Google Chromium Extension
 
-## Todo
-- [ ] Google Drive
-- [ ] Google Forms
-- [ ] Google Sheets
-- [ ] Google Calendar
-- [ ] Google Sheets
-- [ ] Google Docs
-- [ ] Google Slides
-- [ ] Google Accounts
-- [ ] Google Orgs
+## Todo (In order of priority)
+- High Priority
+  - [ ] Google Drive
+  - [ ] Google Docs
+  - [ ] Google Sheets
+  - [ ] Google Slides
+  - [ ] Google Calendar
+- Medium Priority
+  - [ ] Google Forms
+- Low Priority
+  - [ ] Google Passwords
+  - [ ] Google Accounts
+  - [ ] Google Orgs
 
 ## Domains supported
 
@@ -20,3 +23,4 @@
   - `drive`
   - `docs`
   - `account`
+  - `passwords`
