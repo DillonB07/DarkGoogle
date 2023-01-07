@@ -2,7 +2,7 @@
 
 ## Todo (In order of priority)
 - High Priority
-  - [ ] Google Drive
+  - [x] Google Drive
   - [ ] Google Docs
   - [ ] Google Sheets
   - [ ] Google Slides
