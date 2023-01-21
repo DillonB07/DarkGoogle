@@ -125,12 +125,16 @@
 
 
 /* 5 All Google Docs apps */
-  .gdm-page-docs input.docs-title-input {
+  .gdm-page-docs input.docs-title-input, .gdm-page-docs div.goog-toolbar-button {
     background: transparent !important;
   }
 
-  :not([disabled]) .docs-icon:not([disabled]) :not([class*=color]) {
+  .gdm-page-docs :not([disabled]) .docs-icon:not([disabled]) :not([class*=color]) {
     filter: brightness(5);
+  }
+
+  .gdm-page-docs :is(#boldButton, #italicButton, #underlineButton, #docs-toolbar-mode-switcher) * {
+    filter: none;
   }
 
   .gdm-page-docs div.goog-menu.goog-menu-vertical {
