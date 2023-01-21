@@ -3,7 +3,7 @@
 ## Todo (In order of priority)
 - High Priority
   - [x] Google Drive
-  - [ ] Google Docs
+  - [x] Google Docs
   - [ ] Google Sheets
   - [ ] Google Slides
   - [ ] Google Calendar
