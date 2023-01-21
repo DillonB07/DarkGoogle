@@ -60,7 +60,7 @@
   }
 
   /* Inverse colors */
-  .gdm-docs-document canvas.kix-canvas-tile-content, div.goog-menuitem-checkbox {
+  .gdm-docs-document canvas.kix-canvas-tile-content, div.goog-menuitem-checkbox, .gdm-page-docs div.kix-cursor-caret {
     filter: invert(1);
   }
 
