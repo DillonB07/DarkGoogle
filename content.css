@@ -36,7 +36,7 @@
   }
 
   /* Other bg color */
-  .gdm-page-drive form, .gdm-page-drive nav > div:nth-of-type(2) > div[aria-selected=true] > div, .gdm-page-drive form > div:last-of-type > div > div > div > div > div, .gdm-docs-document div#docs-editor-container div#docs-editor div#kix-appview div.kix-appview-editor-container div.kix-appview-editor, .docs-ruler .docs-ruler-background, .gdm-page-docs div.goog-menuitem-highlight {
+  .gdm-page-drive form, .gdm-page-drive nav > div:nth-of-type(2) > div[aria-selected=true] > div, .gdm-page-drive form > div:last-of-type > div > div > div > div > div, .gdm-docs-document div#docs-editor-container div#docs-editor div#kix-appview div.kix-appview-editor-container div.kix-appview-editor, .gdm-page-docs div.goog-menuitem-highlight {
     background-color: var(--gdm-bg2) !important;
     color: var(--gdm-fg) !important;
   }
@@ -133,8 +133,12 @@
     filter: brightness(5);
   }
 
-  .gdm-page-docs :is(#boldButton, #italicButton, #underlineButton, #docs-toolbar-mode-switcher) * {
+  .gdm-page-docs :is(#boldButton, #italicButton, #underlineButton, #docs-toolbar-mode-switcher, div.docs-ruler-indent-first-line, div.docs-ruler-indent-start) * {
     filter: none;
+  }
+
+  .gdm-page-docs div.docs-ruler {
+    filter: invert(0.9);
   }
 
   .gdm-page-docs div.goog-menu.goog-menu-vertical {
