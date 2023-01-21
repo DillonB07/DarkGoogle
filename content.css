@@ -55,7 +55,7 @@
   }
 
   /* Dark hover */
-  div:hover > div[data-target=folder], [guidedhelpid="folder_path_button"]:hover > div, .gdm-page-ogs.gdm-win-name-account c-wiz a:is([data-email], [data-aal]):hover {
+  div:hover > div[data-target=folder], [guidedhelpid="folder_path_button"]:hover > div, .gdm-page-ogs.gdm-win-name-account c-wiz a:is([data-email], [data-aal]):hover, .gdm-page-docs div.goog-toolbar-button.goog-toolbar-button-hover {
     background: var(--gdm-bg-hover) !important;
   }
 
@@ -142,6 +142,14 @@
     border-width: 0px 1px 1px 1px !important;
     margin-top: 2px !important;
     border-top-right-radius: 0px !important;
+  }
+
+  .gdm-page-docs div#docs-menubars {
+    border-bottom: 1px solid var(--gdm-border);
+  }
+
+  .gdm-page-docs div.companion-app-switcher-container {
+    border-color: var(--gdm-border) !important;
   }
 /* 5 END */
 
