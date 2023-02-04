@@ -87,12 +87,8 @@
     background-color: var(--gdm-bg-hover) !important;
   }
 
-  div[id$="-grid-table-container"] canvas {
+  .gdm-docs-spreadsheets [id$="-grid-table-container"] canvas {
     filter: invert(1);
-  }
-
-  div.docs-link-bubble-text-card-component span.text-card-component-text {
-    color: var(--gdm-fg) !important;
   }
 /* 2 END */
 
@@ -162,6 +158,10 @@
 
   .gdm-page-docs div.companion-app-switcher-container {
     border-color: var(--gdm-border) !important;
+  }
+
+  .gdm-page-docs div.docs-link-bubble-text-card-component span.text-card-component-text {
+    color: var(--gdm-fg) !important;
   }
 /* 5 END */
 
