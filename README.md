@@ -4,7 +4,7 @@
 - High Priority
   - [x] Google Drive
   - [x] Google Docs
-  - [ ] Google Sheets
+  - [x] Google Sheets
   - [ ] Google Slides
   - [ ] Google Calendar
 - Medium Priority
