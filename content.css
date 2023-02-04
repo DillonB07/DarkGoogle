@@ -133,7 +133,7 @@
     filter: brightness(5);
   }
 
-  .gdm-page-docs :is(#boldButton, #italicButton, #underlineButton, #docs-toolbar-mode-switcher, div.docs-ruler-indent-first-line, div.docs-ruler-indent-start, div.docs-toolbar-more-button-inner-box) * {
+  .gdm-page-docs :is(#boldButton, #italicButton, #underlineButton, #docs-toolbar-mode-switcher, div.docs-ruler-indent-first-line, div.docs-ruler-indent-start, div.docs-toolbar-more-button-inner-box, div.waffle-assistant-entry-button-green-icon) * {
     filter: none;
   }
 
