@@ -5,10 +5,9 @@
   - [x] Google Drive
   - [x] Google Docs
   - [x] Google Sheets
-  - [ ] Google Slides
   - [ ] Google Calendar
 - Medium Priority
-  - [ ] Google Forms
+  - [ ] Google Slides
 - Low Priority
   - [ ] Google Passwords
   - [ ] Google Accounts
