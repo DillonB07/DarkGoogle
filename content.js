@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', e => {
   const gdmPage = window.location.host.split('.')[0];
   document.body.classList.add('gdm-page-' + gdmPage);
 
-  // Distinguish between docs.google.* pages
+  // Distinguish between docs.google.* pages (docs, sheets, etc)
   if (window.location.host.startsWith('docs.google.')) {
     document.body.classList.add('gdm-docs-' + window.location.pathname.split('/')[1]);
   }
