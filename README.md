@@ -10,6 +10,7 @@
   - [ ] Google Slides
 - Low Priority
   - [ ] Google Passwords
+  - [x] Google Accounts popup
   - [ ] Google Accounts
   - [ ] Google Orgs
 
