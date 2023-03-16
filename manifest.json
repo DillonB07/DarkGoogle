@@ -19,11 +19,13 @@
         "https://drive.google.com/*",
         "https://ogs.google.com/*",
         "https://accounts.google.com/*",
+        "https://calendar.google.com/*",
 
         "https://docs.google.co.uk/*",
         "https://drive.google.co.uk/*",
         "https://ogs.google.co.uk/*",
-        "https://accounts.google.co.uk/*"
+        "https://accounts.google.co.uk/*",
+        "https://calendar.google.co.uk/*"
       ],
       "css": [ "content.css" ],
       "js": [ "content.js" ],
