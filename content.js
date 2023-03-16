@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', e => {
   // Add a class for iFrame name
   document.body.classList.add('gdm-win-name-' + window.name.toLowerCase().replace(/\W+/g, '-'));
 
+  // Style selected files in Google Drive
   let driveSelectedFileClass = null;
   let driveSelectedFileSelector = null;
 
