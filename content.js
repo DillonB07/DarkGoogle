@@ -66,6 +66,18 @@ document.addEventListener('DOMContentLoaded', e => {
   // Add a class for iFrame name
   document.body.classList.add('gdm-win-name-' + window.name.toLowerCase().replace(/\W+/g, '-'));
 
+  // Pages that have the Keep, Tasks, Contacts, etc bar to the right
+  const pagesWithOtherAppsRightBar = ['gdm-page-docs', 'gdm-page-calendar', 'gdm-page-drive'];
+
+  // Current page has the previous bar?
+  let hasOtherAppsRightBar = pagesWithOtherAppsRightBar.some(className => document.body.classList.contains(className));
+  let otherAppsRightBar = null;
+  console.debug('[GDM] Has other apps right bar:', hasOtherAppsRightBar);
+
+  // Current page is the accounts popup?
+  let isAccountsPopup = document.body.classList.contains('gdm-page-ogs') && window.name == 'account';
+  let accountsPopupDiv = null;
+
   // Style selected files in Google Drive
   let driveSelectedFileClass = null;
   let driveSelectedFileSelector = null;
@@ -94,6 +106,60 @@ document.addEventListener('DOMContentLoaded', e => {
         elm.classList.add('gdm-drive-file-selected');
       });
 
+    }
+
+  });
+
+  // When the page loads
+  window.addEventListener('load', e => {
+
+    // Find the bar and add a class to it
+    if (hasOtherAppsRightBar) {
+      otherAppsRightBar = dillselector(elm => {
+        return (
+          elm.dillpos.right == document.body.clientWidth &&
+          elm.dillsize.height + elm.dillpos.top == document.body.clientHeight &&
+          elm.dillpos.bottom == document.body.clientHeight &&
+          elm.dillsize.width <= 80 &&
+          elm.dillsize.width >= 10 &&
+          elm.dillsize.height > elm.dillpos.top &&
+          elm.dillpos.top <= 80
+        );
+      }, {
+        pos: true,
+        size: true
+      }).next().value;
+
+      if (otherAppsRightBar) {
+        console.debug('[GDM] Found other apps right bar:', otherAppsRightBar);
+        otherAppsRightBar.classList.add('gdm-other-apps-right-bar');
+      }
+    }
+
+    // Find the main accounts popup div
+    if (isAccountsPopup) {
+      accountsPopupDiv = [...dillselector(e => {
+        return (
+          e.dillsize.height == window.innerHeight - 24
+        );
+      }, { size: true })][1];
+
+      // Make it dark
+      accountsPopupDiv.classList.add('gdm-make-dark');
+
+      // Make some other parts of the popup dark
+      const otherParts = dillselector(e => {
+        return (
+          e.tagName == 'DIV' &&
+          e.dillsize.height > 100 &&
+          e.dillsize.height < window.innerHeight - 50 &&
+          e.parentElement.tagName == 'C-WIZ'
+        );
+      }, { size: true, pos: true });
+
+      for (const part of otherParts) {
+        part.classList.add('gdm-make-dark-2');
+      }
     }
 
   });
