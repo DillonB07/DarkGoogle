@@ -3,6 +3,8 @@
 
 @layer gdm {
   :root {
+    color-scheme: dark;
+
     --gdm-fg: #ffffff;
     --gdm-fg-disabled: #98a7cfdb;
 
