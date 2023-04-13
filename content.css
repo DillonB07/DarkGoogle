@@ -184,7 +184,7 @@
   /* 7 END */
 
   /* 8 Google Calendar */
-    .gdm-page-calendar div[role=button][id] {
+    .gdm-page-calendar div div[role=button][jsaction]:has(div[role=menu]) {
       background: var(--dt-tertiary) !important;
       color: var(--gdm-fg) !important;
     }
