@@ -182,4 +182,11 @@
       background-color: var(--gdm-bg) !important;
     }
   /* 7 END */
+
+  /* 8 Google Calendar */
+    .gdm-page-calendar div[role=button][id] {
+      background: var(--dt-tertiary) !important;
+      color: var(--gdm-fg) !important;
+    }
+  /* 8 END */
 }
