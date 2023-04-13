@@ -28,7 +28,7 @@
         "https://calendar.google.co.uk/*"
       ],
       "css": [ "content.css" ],
-      "js": [ "content.js" ],
+      "js": [ "dillselectors.js", "content.js" ],
       "run_at": "document_start",
       "all_frames": true
     }
